@@ -1,0 +1,115 @@
+body {
+    background-color: #d14836;
+    color: white;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 60px;
+    
+}
+
+header p {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 30px;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.content {
+    flex: 2 1 70%;
+    order: 1;
+}
+
+.content h1 {
+    color: #d14836;
+}
+
+.lista {
+    flex: 1 1 30%;
+    order: 2;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;    
+    padding-top: 20px;    
+}
+
+.lista ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+
+}
+
+.lista a {
+    text-decoration: none;
+    background-color: #d14836;
+    color: #ffffff;
+    border: #d14836 1px solid;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.lista a:hover{
+    background-color: white;
+    color: #d14836;
+}
+
+.lista .css2 {
+    background-color: white;
+    color: #d14836;
+    font-weight: bold;
+}
+
+
+section {
+    padding: 10px;
+}
+
+section h2 {
+    color: #d85336;
+}
+
+section a {
+    color: #d14836;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section a:hover {
+    text-decoration: none;
+}
+
+aside {
+    flex: 1 1 100%;
+    order: 3;
+    padding: 5px;
+    background-color: #f6dad7;
+    color: #db5e36;
+}
+
+.abajo {
+    font-size: 15px;
+
+}

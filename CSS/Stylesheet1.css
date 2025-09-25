@@ -1,4 +1,13 @@
+body {
+    background-color: #f1f1f1;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
 header {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
     background-color: #04aa6d;
     color: white;
     text-align: left;
@@ -16,25 +25,79 @@ header p {
     font-size: 14px;
 }
 
-body {
-    background-color: #f0f0f0;
+.layout {
+    display: flex;
+    flex-direction: row;
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.lista button {
+.lista ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.lista a {
+    color: #000000;
+    text-decoration: none;
+    flex: 1;
     background-color: #cccccc;
     border: #d6d6d6 1px solid;
-    padding: 8px;
-    margin: 10px auto 0px 15px;
+    border-radius: 4px;
+    padding: 5px;
     cursor: pointer;
 }
 
-.lista button:hover{
+.lista a:hover{
     background-color: white;
 }
 
-.lista button ::selection{
+.lista .css1 {
     background-color: #04aa6d;
+    color: #ffffff;
+}
+
+.lista .active:hover {
+    background-color: #04aa6d;
+    color: #ffffff;
+}
+
+section {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section a {
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section a:hover {
+    text-decoration: none;
+}
+
+aside {
+    flex: 2;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #32a4e7;
+    color: white;
+}
+
+.abajo {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f1f1f1;
+    border: #d6d6d6 1px solid;
 }
