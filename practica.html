@@ -1,6 +1,8 @@
 <head>
-    <link rel="stylesheet" href="./CSS/practicacs.css">
+
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="icon" type="image/jpg" href="./resources/megumin.jpg" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <header>
@@ -8,59 +10,88 @@
 </header>
 
 <body>
-    <h1>Practica de Web</h1>
-    <a href="megumin.html">Megumin</a>
-    <a href="Dorifuto.html">CallMeDrift</a>
-    <a href="archivo.html">Practica css</a>
-    <section>
-        <fieldset>
-            <legend>Formulario de Registro</legend>
-            <Form>
-                <label for="nombre">Nombres</label><br>
-                <input type="text" name="nombre"><br>
-                <label for="apellido">Apellidos</label><br>
-                <input type="text" name="apellido"><br>
-                <label for="fecha">Fecha de nacimiento</label><br>
-                <input class="fecha" type="date" name="fecha"><br>
-                <label for="email">Correo electronico</label><br>
-                <input type="email" name="email" placeholder="juegagerman@gmail.com"><br>
-                <label for="tel">Celular</label><br>
-                <input type="text" name="tel"><br>
-                <label for="cc">Numero de Cedula</label><br>
-                <input type="text" name="cc"><br>
-                <label for="NCred">Numero de tarjeta de credito</label><br>
-                <input type="text" name="NCred"><br>
-                <label for="foto">Foto</label><br>
-                <input type="file" name="foto"><br>
-                <label for="genre">Genero</label><br>
-                <select name="genre">
-                    <option value="hombre">Hombre</option>
-                    <option value="mujer">Mujer</option>
-                    <option value="otro">37 Tipos de Gay</option>
-                </select><br>
-                <label for="estadoCivil">Estado Civil</label><br>
-                <select name="estadoCivil">
-                    <option value="hombre">Soltero</option>
-                    <option value="mujer">Casado</option>
-                    <option value="otro">Divorciado</option>
-                    <option value="viudo">Viudo</option>
-                    <option value="otro">Comprometido con un personaje 2D que no existe</option>
-                </select>
-            </Form><br>
-            <button type="submit">Enviar</button>
-    </section>
+    <div class="container" style="text-align: center;">
+        <h1>Practica de Web (ahora con bootstrap)</h1>
+        <button onclick="location.href='megumin.html'" type="button" class="btn btn-primary">Megumin</button>
+        <button onclick="location.href='Dorifuto.html'" type="button" class="btn btn-primary">CallMeDrift</button>
+        <button onclick="location.href='archivo.html'" type="button" class="btn btn-primary">Practica css</button>
+        <section>
+            <fieldset>
+                <legend>Formulario de Registro</legend>
+                <Form>
+                    <div>
+                        <label for="name" class="form-label mt-4">Nombres</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nombre" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="surname" class="form-label mt-4">Apellidos</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Apellido" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="date" class="form-label mt-4">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="date" placeholder="Fecha de Nacimiento"
+                            autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="email" class="form-label mt-4">Correo electronico</label>
+                        <input type="email" class="form-control" id="email" placeholder="juegagerman@gmail.com"
+                            autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="tel" class="form-label mt-4">Celular</label>
+                        <input type="text" class="form-control" id="tel" placeholder="Celular" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="cc" class="form-label mt-4">Numero de Cedula</label>
+                        <input type="text" class="form-control" id="cc" placeholder="Numero de Cedula"
+                            autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="NCred" class="form-label mt-4">Numero de tarjeta de credito</label>
+                        <input type="text" class="form-control" id="NCred" placeholder="Numero de tarjeta de credito"
+                            autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="foto" class="form-label mt-4">Foto</label>
+                        <input type="file" class="form-control" id="foto" placeholder="Foto" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="genre" class="form-label mt-4">Genero</label>
+                        <select class="form-select" id="genre">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="otro">37 Tipos de Gay</option>
+                        </select><br>
+                    </div>
+                    <label for="estadoCivil">Estado Civil</label><br>
+                    <select class="form-select" id="estadoCivil">
+                        <option value="hombre">Soltero</option>
+                        <option value="mujer">Casado</option>
+                        <option value="otro">Divorciado</option>
+                        <option value="viudo">Viudo</option>
+                        <option value="otro">Comprometido con un personaje 2D que no existe</option>
+                    </select>
+                </Form><br>
+                <button type="submit" class="btn btn-info">Enviar</button>
+        </section>
 
-    <details>
-        <summary>Mas Info</summary>
-        <p>Quiero dormir :´v</p>
-
-        <progress>funciona pls</progress>
-    </details>
-    <section>
-        <video src="resources/¿Otra Lina Más  OFICIAL LYRICS.mp4" title="video" type="video/mp4" controls></video>
-    </section>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dVfXF8O-lHw?si=FxiiESYgx6-5aIV4"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div>
+        <details>
+            <summary>Mas Info</summary>
+            <p>Quiero dormir :´v</p>
+            <div class="border border-3 border-secondary rounded-pill">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">funciona pls</div>
+            </div>
+        </details>
+        </div>
+        <br>
+        <section>
+            <video src="resources/¿Otra Lina Más  OFICIAL LYRICS.mp4" title="video" type="video/mp4" controls></video>
+        </section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dVfXF8O-lHw?si=FxiiESYgx6-5aIV4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 </body>
