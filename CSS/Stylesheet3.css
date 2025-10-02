@@ -34,11 +34,81 @@ header p {
     padding: 0;
 }
 
+
+/* Barra de estilos */
 .lista ul {
     display: flex;
     flex-direction: row;
-    background-color: #000000;
-    gap: 15px;
     list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 20px;
+    gap: 10px;
 }
 
+.lista ul li a {
+    display: inline-block;
+    background-color: #555;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lista ul li a:hover {
+    background-color: #333;
+}
+
+/* Estilo activo (el que se ve verde en la imagen) */
+.css3 {
+    background-color: #4caf50 !important;
+}
+
+/* Contenido principal */
+.content {
+    margin: 0 20px;
+}
+
+.content h1 {
+    color: #4caf50;
+    font-size: 22px;
+}
+
+.content h2 {
+    color: #4caf50;
+    font-size: 18px;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.content a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Barra lateral */
+aside {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: #4caf50;
+    font-size: 16px;
+}
+
+/* Pie de página / texto largo abajo */
+.abajo {
+    margin: 20px;
+    font-size: 12px;
+    text-align: justify;
+}

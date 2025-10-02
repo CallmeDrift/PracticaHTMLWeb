@@ -1,0 +1,104 @@
+/* Fondo y fuente general */
+body {
+    background-color: #000;
+    color: #9f9;
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Header */
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #9f9;
+}
+
+/* Menú en lista vertical */
+.lista ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 10px 0 20px 0;
+}
+
+.lista ul li {
+    margin: 5px 0;
+}
+
+.lista ul li a {
+    color: #9f9;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lista ul li a:hover {
+    text-decoration: underline;
+}
+
+.lista .css4 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Contenido */
+.content {
+    margin: 0 20px;
+}
+
+.content h1 {
+    color: #9f9;
+    font-size: 22px;
+}
+
+.content h2 {
+    color: #9f9;
+    font-size: 18px;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #9f9;
+}
+
+.content a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+
+/* Sidebar */
+aside {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #000;
+    color: #ffffff;
+    padding: 15px;
+    margin: 10px 40px;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+/* Texto inferior */
+.abajo {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+    margin: 20px;
+    font-size: 12px;
+    text-align: justify;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+}
